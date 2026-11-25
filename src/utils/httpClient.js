@@ -60,7 +60,7 @@ function createHttpClient(apiKey, baseUrl, siteBaseUrl) {
   const baseHeaders = {
     Accept: 'application/json',
     'Cache-Control': 'no-cache',
-    'User-Agent': `r6-data.js/${pkg.version}`,
+    'User-Agent': `arenyze-rainbow-six-siege/${pkg.version}`,
   };
 
   /**

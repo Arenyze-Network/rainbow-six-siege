@@ -1,6 +1,6 @@
 {
-  "name": "r6-data.js",
-  "version": "3.3.1",
+  "name": "@arenyze/rainbow-six-siege",
+  "version": "0.1.0",
   "description": "R6 Siege (Rainbow Six Siege) API sdk for player stats, operators, maps, ranks, seasons, charms, skins, game datas and ban status. Last Updated Y11S3",
   "main": "src/index.js",
   "type": "commonjs",
@@ -27,13 +27,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mazeor9/r6-data.js"
+    "url": "git+https://github.com/Arenyze-Network/rainbow-six-siege.git"
   },
   "homepage": "https://r6.arenyze.com/",
   "bugs": {
-    "url": "https://github.com/mazeor9/r6-data.js/issues"
+    "url": "https://github.com/Arenyze-Network/rainbow-six-siege/issues"
   },
   "funding": "https://buymeacoffee.com/mazeor",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "r6",
     "rainbow-six-siege",

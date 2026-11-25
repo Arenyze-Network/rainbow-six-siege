@@ -1,20 +1,22 @@
-# r6-data.js — R6 Rainbow Six Siege API Wrapper
+# @arenyze/rainbow-six-siege — R6 Rainbow Six Siege API Wrapper
+
+> Formerly published as `r6-data.js`. Same API: replace `r6-data.js` with `@arenyze/rainbow-six-siege` in your imports.
 
 **Rainbow Six Siege (R6) API sdk** - Get player stats, operators, maps, ranks, seasons, charms, and more. Full TypeScript support included. Last updated Y11S3 - Ranked 3.0.
 
 <div align="center">
   <p>
-    <a href="https://github.com/mazeor9/r6-data.js/releases/latest">
-      <img src="https://img.shields.io/github/v/release/mazeor9/r6-data.js?style=for-the-badge" alt="GitHub release (latest SemVer)" />
+    <a href="https://github.com/Arenyze-Network/rainbow-six-siege/releases/latest">
+      <img src="https://img.shields.io/github/v/release/Arenyze-Network/rainbow-six-siege?style=for-the-badge" alt="GitHub release (latest SemVer)" />
     </a>
-    <a href="https://github.com/mazeor9/r6-data.js/releases/latest">
-      <img src="https://img.shields.io/github/release-date/mazeor9/r6-data.js?label=latest%20release&style=for-the-badge" alt="Latest release" />
+    <a href="https://github.com/Arenyze-Network/rainbow-six-siege/releases/latest">
+      <img src="https://img.shields.io/github/release-date/Arenyze-Network/rainbow-six-siege?label=latest%20release&style=for-the-badge" alt="Latest release" />
     </a>
-    <a href="https://www.npmjs.com/package/r6-data.js">
-      <img src="https://img.shields.io/npm/v/r6-data.js.svg?logo=npm&style=for-the-badge" alt="npm version" />
+    <a href="https://www.npmjs.com/package/@arenyze/rainbow-six-siege">
+      <img src="https://img.shields.io/npm/v/@arenyze/rainbow-six-siege.svg?logo=npm&style=for-the-badge" alt="npm version" />
     </a>
-    <a href="https://www.npmjs.com/package/r6-data.js">
-      <img src="https://img.shields.io/npm/dt/r6-data.js.svg?style=for-the-badge" alt="NPM downloads" />
+    <a href="https://www.npmjs.com/package/@arenyze/rainbow-six-siege">
+      <img src="https://img.shields.io/npm/dt/@arenyze/rainbow-six-siege.svg?style=for-the-badge" alt="NPM downloads" />
     </a>
   </p>
 </div>
@@ -22,7 +24,7 @@
 ## Installation
 
 ```sh
-npm i r6-data.js
+npm i @arenyze/rainbow-six-siege
 ```
 
 ## Getting Started
@@ -39,7 +41,7 @@ Visit the official website: **[r6.arenyze.com](https://r6.arenyze.com/)**
 The entire SDK is accessed through the `R6Client` instance.
 
 ```javascript
-const { R6Client } = require('r6-data.js');
+const { R6Client } = require('@arenyze/rainbow-six-siege');
 
 const r6 = new R6Client({ 
   apiKey: 'YOUR_API_KEY' // Required
@@ -68,7 +70,7 @@ const r6 = new R6Client({
 The SDK provides complete TypeScript declarations!
 
 ```typescript
-import { R6Client, ProfileParams, PlayerProfileResponse } from 'r6-data.js';
+import { R6Client, ProfileParams, PlayerProfileResponse } from '@arenyze/rainbow-six-siege';
 
 const r6 = new R6Client({ apiKey: 'YOUR_API_KEY' });
 
@@ -87,7 +89,7 @@ const profile: PlayerProfileResponse = await r6.players.getProfile(params);
 
 Player Data V2 uses one profile request for account information, statistics, ban status, seasons, and rank history.
 
-> **Migration to 3.3.0:** `getAccountInfo`, `getIsBanned`, `getPlayerStats`, `getStats`, `getSeasonalStats`, and `getPlayerComparisons` were replaced by `getProfile`. Operator statistics and leaderboards remain dedicated requests.
+> **Migration from r6-data.js 3.3.0:** `getAccountInfo`, `getIsBanned`, `getPlayerStats`, `getStats`, `getSeasonalStats`, and `getPlayerComparisons` were replaced by `getProfile`. Operator statistics and leaderboards remain dedicated requests.
 
 ### `getProfile(params)`
 
@@ -436,7 +438,7 @@ console.log('Rounds:', replay.rounds);
 ### TypeScript
 
 ```typescript
-import { R6Client, ReplayFileInput, UploadReplaysResult, MatchReplayResult } from 'r6-data.js';
+import { R6Client, ReplayFileInput, UploadReplaysResult, MatchReplayResult } from '@arenyze/rainbow-six-siege';
 
 const r6 = new R6Client({ apiKey: 'YOUR_API_KEY' });
 
